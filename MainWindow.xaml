@@ -1,0 +1,31 @@
+﻿<Window x:Class="AsyncAxis2Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AsyncAxis2Client"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <GroupBox Name="grboxAxis2Client" Header="Axis2Client">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="45*"/>
+                <ColumnDefinition Width="743*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.ColumnSpan="2">
+                <Label Name="lblFileName" Content="File Name:" Margin="0,0,690,387" />
+                <TextBox Name="txtFileName" Text="" Margin="87,0,555,387" />
+                <Button Name="btnGetContent" Content="Get Content" Click="btnGetContent_Click" Margin="293,-1,406,387" RenderTransformOrigin="0.5,0.5" >
+                </Button>
+                <Label Name="lblFileContent" Content="File Content:" Margin="0,44,685,341" />
+                <Label Name="lblBlocked" Foreground="Red" Margin="87,44,555,341" Background="#FFEDE5E5" />
+                <TextBox Name="txtFileContent" Text="" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Margin="10,91,555,176" />
+
+            </Grid>
+            <Button Name="btnDoSomething" Content="Do Something Else" Margin="553,127,63,261" Grid.Column="1" Click="btnDoSomething_Click" />
+        </Grid>
+
+
+    </GroupBox>
+
+</Window>
